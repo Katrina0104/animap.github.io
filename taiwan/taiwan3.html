@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taiwan Endangered Animals</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #fef9e4;
+        }
+
+        .header {
+            background-color: #a3d07d;
+            padding: 60px;
+            text-align: center;
+            position: relative;
+            background-image: url(../pixel-art-forest-background-seamless-600nw-2501937379.webp);
+
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin: 0;
+            color: #2a5e97;
+            font-family: 'Comic Sans MS', sans-serif;
+        }
+
+        .header img {
+            position: absolute;
+            top: 120px; /* Adjust to bring the rabbits closer to the navbar */
+            height: 50px;
+        }
+
+        .header .rabbit-left {
+            left: 300px; /* Position the left rabbit */
+        }
+
+        .header .rabbit-right {
+            right: 200px; /* Position the right rabbit */
+        }
+
+        .navbar {
+            background-color: #2a5e97;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            display: block;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+
+        .navbar a:hover {
+            background-color: #1d456d;
+        }
+
+        .content-box {
+            background-color: #fef9e4;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 800px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+
+        .content-box h2 {
+            font-size: 1.8em;
+            color: #2a5e97;
+            margin-bottom: 10px;
+        }
+
+        .content-box p {
+            font-size: 1em;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .content-box img {
+            max-width: 100%; 
+            height: auto; 
+            display: block; 
+            margin: 20px auto; 
+            max-height: 500px; 
+        }
+
+        .taxonomy {
+            font-style: italic;
+            font-size: 1.2em;
+            color: #a0522d;
+            margin-top: -10px;
+            margin-bottom: 20px;
+        }
+
+        .quick-facts {
+            background-color: #a3d07d;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 8px;
+            color: #2a5e97;
+            position: relative;
+        }
+
+        .quick-facts h3 {
+            margin: 0 0 10px;
+            font-size: 1.6em;
+            color: #fff;
+        }
+
+        .quick-facts ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .quick-facts ul li {
+            margin: 5px 0;
+            font-size: 1em;
+            color: #fff;
+        }
+
+        .quick-facts img {
+            position: absolute; 
+            top: 50%; 
+            right: 10px;
+            transform: translateY(-50%); 
+            width: 200px;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .pagination {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .pagination a {
+            color: #2a5e97;
+            text-decoration: none;
+            margin: 0 5px;
+            padding: 8px 12px;
+            border: 1px solid #2a5e97;
+            border-radius: 4px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .pagination a:hover {
+            background-color: #2a5e97;
+            color: white;
+        }
+
+        .pagination a.active {
+            background-color: #2a5e97;
+            color: white;
+            pointer-events: none;
+        }
+        .footer {
+            background-color: #2a5e97;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Taiwan Endangered Animals</h1>
+        <img src="../rabbit.png" alt="Rabbit Left" class="rabbit-left">
+        <img src="../rabbit.png" alt="Rabbit Right" class="rabbit-right">
+    </div>
+    <nav class="navbar">
+        <a href="../animap/templates/welcome_page.html">Home</a>
+        <a href="../animap/templates/asia_map.html">Maps</a>
+        <a href="../animap/templates/quiz.html">Games</a>
+        <a href="../animap/templates/about_us.html">About Us</a>
+    </nav>
+    <div class="content-box">
+
+        <!--   Formosan Whistling Thrush -->
+        <h2>8.  Formosan Whistling Thrush</h2>
+        <div class="taxonomy">Myophonus insularis</div>
+        <img src="../taiwan/taiwan animal img/formosan whistling thrush.jpg" >
+        <p>The <b>Formosan Whistling Thrush</b> is a beautiful bird species endemic to Taiwan. Known for its melodious whistling songs, the Formosan Whistling Thrush has dark plumage, ranging from black to blue, and a striking orange-yellow throat patch. These birds are typically found in forested regions, particularly in the mountainous areas of Taiwan, where they inhabit streams and dense undergrowth.</p>
+
+        <p>Formosan Whistling Thrushes are solitary and territorial, with males using their whistling calls to establish their territories and attract mates. Their diet consists mainly of insects, small invertebrates, and fruit. Due to habitat destruction and the introduction of non-native predators, the population of Formosan Whistling Thrushes is declining, and they are now considered vulnerable. Conservation measures are being implemented to protect their habitats and ensure their future.</p>
+
+        <p><b>Fun Fact:</b> The sweet and melodious songs of the Formosan Whistling Thrush can often be heard echoing through the mountain forests of Taiwan, especially during the breeding season!</p>
+
+        <div class="quick-facts">
+            <h3>Quick Fact Sheet</h3>
+            <ul>
+                <li><strong>Common Name(s):</strong> Formosan Whistling Thrush</li>
+                <li><strong>Scientific Name:</strong> Myophonus insularis</li>
+                <li><strong>Animal Type:</strong> Bird</li>
+                <li><strong>Size:</strong> 30-35 cm (12-14 inches) in length</li>
+                <li><strong>Weight:</strong> 100-150 grams (3.5-5.3 ounces)</li>
+                <li><strong>Lifespan:</strong> 6-8 years</li>
+            </ul>
+            <img src="../taiwan/taiwan animal img/formosan whistling thrush.jpg" >
+        </div>
+
+
+
+        <!-- Peregrine Falcon -->
+        <h2>9. Peregrine Falcon </h2>
+        <div class="taxonomy"> Falco peregrinus</div>
+        <img src="../taiwan/taiwan animal img/peregrine falcon.jpg" >
+        <p>The <b>Peregrine Falcon</b> is one of the fastest birds in the world and is widely distributed across the globe. Known for its remarkable speed, it can reach up to 240 miles per hour (386 km/h) when diving to catch prey, making it the fastest animal on the planet. These falcons have a sleek, aerodynamic body with a distinctive blue-gray plumage, a black "helmet" on their head, and a characteristic dark line running from their beak to their eyes.</p>
+
+        <p>Peregrine Falcons are birds of prey, primarily hunting medium-sized birds such as pigeons and doves. They catch their prey mid-air in a high-speed dive, often plummeting from great heights. They are highly skilled hunters and nest on tall structures like cliffs, skyscrapers, and bridges. While their numbers were once threatened due to pesticide poisoning, they have made a remarkable recovery in many parts of the world due to conservation efforts and banning harmful chemicals like DDT.</p>
+
+        <p><b>Fun Fact:</b> Peregrine Falcons are capable of flying at speeds so fast that they can cover a mile in just a few seconds!</p>
+
+        <div class="quick-facts">
+            <h3>Quick Fact Sheet</h3>
+            <ul>
+                <li><strong>Common Name(s):</strong> Peregrine Falcon</li>
+                <li><strong>Scientific Name:</strong> Falco peregrinus</li>
+                <li><strong>Animal Type:</strong> Bird</li>
+                <li><strong>Size:</strong> 34-58 cm (13-23 inches) in length</li>
+                <li><strong>Weight:</strong> 500-1,500 grams (1.1-3.3 pounds)</li>
+                <li><strong>Lifespan:</strong> 10-15 years</li>
+            </ul>
+            <img src="../taiwan/taiwan animal img/peregrine falcon.jpg" >
+        </div>
+
+
+
+
+
+        <!-- Formosan Blue Magpie -->
+        <h2>10. Formosan Blue Magpie </h2>
+        <div class="taxonomy">Urocissa caerulea</div>
+        <img src="../taiwan/taiwan animal img/formosan blue magpie.jpg" >
+        <p>The <b>Formosan Blue Magpie</b> is a striking bird species native to Taiwan. This bird is known for its vibrant blue and black plumage, long tail feathers, and distinctive white wing markings. The Formosan Blue Magpie is a social bird, often seen in groups, and is famous for its intelligence and problem-solving abilities. They are omnivores and feed on a variety of foods, including fruit, seeds, small mammals, and insects.</p>
+
+        <p>Formosan Blue Magpies are highly territorial, often establishing breeding pairs that defend their nests from intruders. They are also known to be curious and bold, sometimes interacting with humans, although they remain wary of potential threats. Unfortunately, the Formosan Blue Magpie is critically endangered due to habitat loss, predation by non-native species, and human disturbances. Conservation programs in Taiwan are working to protect their habitats and ensure their survival.</p>
+
+        <p><b>Fun Fact:</b> Despite their boldness, Formosan Blue Magpies are excellent at mimicking the sounds of other birds and even human-made noises!</p>
+
+        <div class="quick-facts">
+            <h3>Quick Fact Sheet</h3>
+            <ul>
+                <li><strong>Common Name(s):</strong> Formosan Blue Magpie</li>
+                <li><strong>Scientific Name:</strong> Urocissa caerulea</li>
+                <li><strong>Animal Type:</strong> Bird</li>
+                <li><strong>Size:</strong> 60-70 cm (24-28 inches) in length</li>
+                <li><strong>Weight:</strong> 250-300 grams (8.8-10.6 ounces)</li>
+                <li><strong>Lifespan:</strong> 6-10 years</li>
+            </ul>
+            <img src="../taiwan/taiwan animal img/formosan blue magpie.jpg" > 
+        </div>
+    </div>
+    <div class="pagination">
+        <a href="taiwan1.html">1</a>
+        <a href="taiwan2.html" >2</a>
+        <a href="taiwan3.html" class="active">3</a>
+    </div>
+    <div class="footer">
+        <p> 2024 Web Programming Project</p>
+    </div>
+
+    <audio id="background-audio" autoplay hidden loop>
+        <source src="../animap/static/audio/music.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="../animap/static/js/audio_control.js"></script>
+    
+</body>
+</html>

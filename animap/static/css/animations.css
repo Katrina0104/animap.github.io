@@ -1,0 +1,31 @@
+/* Rotate an element around its center point (360 degrees) */
+@keyframes planetAn {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Let the element move from the bottom of the page (outside 500px) to its original position and gradually display it */
+@keyframes bottomIn {
+  from {
+    transform: translateY(500px);
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Let an element gradually enlarge from fully reduced (invisible) to its original size and become fully visible */
+@keyframes zoomIn {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #fef9e4;
+        }
+
+        .header {
+            background-color: #a3d07d;
+            padding: 60px;
+            text-align: center;
+            position: relative;
+            background-image: url(../../pixel-art-forest-background-seamless-600nw-2501937379.webp);
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin: 0;
+            color: #2a5e97;
+            font-family: 'Comic Sans MS', sans-serif;
+        }
+
+        .header img {
+            position: absolute;
+            top: 120px; /* Adjust to bring the rabbits closer to the navbar */
+            height: 50px;
+        }
+
+        .header .rabbit-left {
+            left: 20px; /* Position the left rabbit */
+        }
+
+        .header .rabbit-right {
+            right: 20px; /* Position the right rabbit */
+        }
+
+        .navbar {
+            background-color: #2a5e97;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            display: block;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+
+        .navbar a:hover {
+            background-color: #1d456d;
+        }
+
+        .biodata {
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+            padding: 20px;
+            gap: 40px;
+        }
+
+        .bio-card {
+            display: flex;
+            align-items: center;
+            background-color: #e1f3d8;
+            border: 2px solid #2a5e97;
+            padding: 20px;
+            width: 300px;
+            text-align: left;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .bio-card img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+
+        .bio-card h3 {
+            color: #2a5e97;
+            margin-bottom: 10px;
+        }
+
+        .bio-card p {
+            margin: 5px 0;
+        }
+
+        .footer {
+            background-color: #2a5e97;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <audio id="background-audio" autoplay hidden loop>
+        <source src="../static/audio/music.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="../static/js/audio_control.js"></script>
+
+    <div class="header">
+        <h1>About-Us</h1>
+        <img src="../../rabbit.png" alt="Rabbit Left" class="rabbit-left">
+        <img src="../../rabbit.png" alt="Rabbit Right" class="rabbit-right">
+    </div>
+    <nav class="navbar">
+        <a href="../templates/welcome_page.html">Home</a>
+        <a href="../templates/asia_map.html">Maps</a>
+        <a href="../templates/quiz.html">Games</a>
+        <a href="about_us.html">About Us</a>
+    </nav>
+
+    <div class="biodata">
+        <!-- Bio Card 1 -->
+        <div class="bio-card">
+            <img src="../../jason.jpg" alt="Your Image"> <!-- Replace with your image -->
+            <div>
+                <h3>Student 1: Filippo Jason Budiyanto</h3>
+                <p><strong>Role:</strong> Developer</p>
+                <p><strong>Student Id:</strong> 1123541</p>
+                <p><strong>Favorite Animal:</strong> Giant Panda</p>
+            </div>
+        </div>
+
+        <!-- Bio Card 2 -->
+        <div class="bio-card">
+            <img src="../../katrina.jpg" alt="Friend's Image"> <!-- Replace with your friend's image -->
+            <div>
+                <h3>Student 2: Katrina</h3>
+                <p><strong>Role:</strong> Designer</p>
+                <p><strong>Student Id:</strong> 1123521</p>
+                <p><strong>Favorite Animal:</strong> Snow Leopard</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p> 2024 Web Programming Project</p>
+    </div>
+</body>
+</html>

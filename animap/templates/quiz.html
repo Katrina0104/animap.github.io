@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animap Quiz Game</title>
+    <link rel="stylesheet" href="../static/css/quiz.css">
+</head>
+<body>
+    <div class="go-back">
+        <a href="asia_map.html">
+            <i class="fa-solid fa-arrow-left"></i>Map
+        </a>
+    </div>
+
+    <div id="particles-js"></div>
+    <div id="confetti-container"></div>
+    <audio id="correct-sound" src="https://assets.mixkit.co/active_storage/sfx/2000/2000-preview.mp3"></audio>
+    <audio id="incorrect-sound" src="https://assets.mixkit.co/active_storage/sfx/2003/2003-preview.mp3"></audio>
+    <div class="rules-modal" id="rules-modal">
+        <div class="rules-content">
+            <div class="rules-image">
+                <svg viewBox="0 0 200 200">
+                    <circle cx="100" cy="80" r="40" fill="#FFD700"/>
+                    <circle cx="85" cy="70" r="5" fill="#000"/>
+                    <circle cx="115" cy="70" r="5" fill="#000"/>
+                    <path d="M85 100 Q100 120 115 100" fill="none" stroke="#000" stroke-width="3"/>
+                </svg>
+            </div>
+            <div class="rules-text">
+                <h2>Let's Play Together! &#x1f31f;</h2>
+                <ul>
+                    <li>Pick your favorite category to start! &#x1f31f;</li>
+                    <li>You have 20 fun seconds for each question! &#x1f552;</li>
+                    <li>Get 100 magical points for each correct answer! &#x2b50;&#xfe0f;</li>
+                    <li>Try to become the Quiz Champion! &#x1f3c6;</li>
+                    <li>Learn amazing new things! &#x1f31f;</li>
+                </ul>
+                <div class="rules-buttons">
+                    <button class="rules-btn" onclick="startGame()">I'm Ready! &#x1f680;</button>
+                    <button class="rules-btn secondary" onclick="startGameWithoutRules()">Don't Show Again &#x1f44b;</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">        
+        <div id="category-selection">
+            <h1>ＡＮＩＭＡＰ　ＱＵＩＺ</h1>
+            <div class="category-select">
+                <button class="category-btn red" onclick="selectCategory('China')">China</button>
+                <button class="category-btn blue" onclick="selectCategory('Indonesia')">Indonesia</button>
+                <button class="category-btn green" onclick="selectCategory('India')">India</button>
+                <button class="category-btn yellow" onclick="selectCategory('Iran')">Iran</button>
+                <button class="category-btn red" onclick="selectCategory('Japan')">Japan</button>
+                <button class="category-btn blue" onclick="selectCategory('Kyrghzstan')">Kyrghzstan</button>
+                <button class="category-btn green" onclick="selectCategory('Mongolia')">Mongolia</button>
+                <button class="category-btn yellow" onclick="selectCategory('Philipphines')">Philipphines</button>
+                <button class="category-btn red" onclick="selectCategory('Russia')">Russia</button>
+                <button class="category-btn blue" onclick="selectCategory('Korea')">South Korea</button>
+                <button class="category-btn green" onclick="selectCategory('Taiwan')">Taiwan</button>
+                <button class="category-btn yellow" onclick="selectCategory('Vietnam')">Vietnam</button>
+            </div>
+        </div>
+
+        <div id="game-container" class="game-container">
+            <div class="score">Score: <span id="score">0</span></div>
+            <div class="progress-container" id="progress-dots">
+            </div>
+            <div class="question-container">
+                <h2 id="question">Loading question...</h2>
+                <div class="timer">
+                    <div class="timer-bar" id="timer-bar"></div>
+                </div>
+            </div>
+            <div class="options-grid">
+                <div class="option red" data-index="0"></div>
+                <div class="option blue" data-index="1"></div>
+                <div class="option yellow" data-index="2"></div>
+                <div class="option green" data-index="3"></div>
+            </div>
+            <div class="feedback" id="feedback"></div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <script src="../static/js/quiz.js"></script>
+    <div id="rules-helper" class="rules-helper">
+        <button class="rules-helper-btn" onclick="showRulesHelper()">
+            Rules &#x1f4da;
+        </button>
+    </div>
+
+    <audio id="background-audio" autoplay hidden loop>
+        <source src="../static/audio/music.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="../static/js/audio_control.js"></script>
+</body>
+</html>
